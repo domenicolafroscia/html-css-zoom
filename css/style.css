@@ -17,7 +17,7 @@ a {
 /* COMMON */
 .wrapper {
     width: 100%;
-    max-height: 150vh;
+    max-height: 100vh;
     background-color: black; 
 }
 
@@ -46,13 +46,11 @@ a {
 /* MAIN */
 .container {
     width: 95%;
-    max-width: 1100px;
+    height: 90vh;
+    max-width: 1480px;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 30px;
-    /* debug */
-    min-height: 300px;
-    border: 1px solid white;
 }
 
 .row {
@@ -61,21 +59,57 @@ a {
     gap: 1rem;
 }
 
-.col {
+.card {
+    position: relative;
     width: calc(100% / 7 - 6rem / 7);
-    /* debug */
-    min-height: 200px; 
-    background-color: aqua;
-    border: 1px solid white;
 }
-
+   
+.pinco-pallo {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    background-color: #464545b0;
+    padding: 3px;
+    font-size: .75rem;
+}
 
 /* FOOTER */
-.footer {
+.footer { 
+    background-color: #222222;
+    height: 7vh;
     width: 100%;
     color: white; 
-    /* debug */
-    height: 5vh;
-    border: 1px solid white;
-    background-color: #222222;
 }
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation {
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+.nav-1 {
+    display: flex;
+    padding-top: 10px;
+}
+
+.nav-2 {
+    background-color: white;
+    padding-top: 12px;
+    padding-right: 20px;
+    border-radius: 30px;
+}   
+
+.link-nav {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.login {
+    color: black;
+    display: inline-block;
+}
+
